@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            ACT 2
+        </title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .page{
+                padding: 24px;
+            }
+            .num{
+                border-radius: 10px;
+                width: 100%;
+                max-width: 900px;
+                height: 480px;  
+                overflow: auto;
+                scrollbar-width: none;
+                margin: auto;
+                box-shadow: 4px 4px #11011e;
+                transition: ease-in 0.1s;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .num:hover{
+                box-shadow: 10px 10px #11011e;
+                scale: 1.01;
+            }
+
+            .download-btn{
+                width: 100px;
+                height:100px;
+                align-self: center;
+            }
+
+            a{
+                display: block;
+                width: 200px;
+                margin: 10px auto 0;
+                text-align: center;
+                transition: ease 0.2s;
+            }
+
+            a:hover{
+                scale: 1.1;
+            }
+
+            .one{
+                background-image: linear-gradient(#cf90ff,#b75aff);
+                color: #11011e;
+                text-align: center;
+            }
+
+            .content{
+                padding: 20px;
+                margin: auto;
+            }
+
+            .one h1, .one h4{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .question{
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bolder;
+            }
+           
+            p{
+                font-family:'Courier New', Courier, monospace;
+                font-weight: 800px;
+                font-size: 20px;
+            }
+            .img{
+                margin: auto;
+                width: 200px;
+                height: 200px;
+                background-image: url(1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                 border-radius: 15px;
+                 transition: ease-out 0.5s;
+            }
+            .img:hover{
+                background-image: url(2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                scale: 1.1;  
+            }
+
+            /*NUM 2*/
+            .two{
+                background-color: #90d3ff;
+                background-image: linear-gradient(#90d3ff,#60bfff);
+                text-align: left;
+                color: #effdff;
+                -webkit-text-stroke-color: #363943;
+                -webkit-text-stroke-width: 1px;
+            }
+
+            .two h1{
+                font-size: 40px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                letter-spacing: 15px;
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            dt{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+                margin-bottom: 10px;
+                margin-top: 40px;
+            }
+
+            dd{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: justify;
+                color: #363943;
+            }
+
+            /*NUM 3*/
+            .three{
+                background-color: #ffabd9;
+            }
+
+            .three h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #69b395;
+            }
+
+            .three h6{
+                color: #3d79b1;
+            }
+            
+            .three .alice{
+                font-size: 67px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            /*NUM 4*/
+             .four{
+                background: #11011e;
+            }
+
+            table{
+                margin: auto;
+                margin-top: 80px;
+                width: 100%;
+                max-width: 800px;
+                height: 400px;
+                text-align: center;
+                border: solid 2px #ffffff;
+            }
+
+            td{
+                border: solid 1px #ffffff;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;    
+                transition: ease 0.5s;
+            }
+
+            .big{
+                  background-color: white;
+                width: 250px;
+            }
+            
+            .small{
+                width: 250px;
+                height: 133px;
+                
+            }
+
+            .a{
+                background-image: linear-gradient(#b657ff,#001870);
+                color: rgb(249, 20, 165);
+            }
+
+            .b{
+                background-image: linear-gradient(#ffffff,#ffffff, #470d68);
+                color: rgb(99, 195, 255);
+            }
+
+            .c{
+                background-image: linear-gradient(#fffa9f,#ff88c5);
+                color: rgb(39, 172, 105);
+            }
+
+            .d{
+                background-image: linear-gradient(#d30000, #e25a00, #ffde59, #26a051, #43b4ed, #490084);
+                color: rgb(255, 255, 255);
+            }
+            
+            .e{
+                background-image: linear-gradient(#ffac12,#fcff5d);
+                color: rgb(203, 28, 1);
+                
+            }
+
+            .f{
+                background-image: linear-gradient(#ff859d,#d30f43);
+                color: rgb(255, 249, 65);
+                
+            }
+
+            td:hover{
+                scale: 1.1;
+                border-radius: 5px
+            }
+
+            .five{
+                background-image: linear-gradient(#0c000e,#161516);
+                color: white;
+                text-shadow: 2px 2px #211c21;
+            }
+
+            .five h1{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                text-decoration: underline;
+            
+            }
+
+            .five img{
+                width: 500px;
+                height: 300px;
+                max-width: 100%;
+                object-fit: contain;
+            }
+
+            .six {
+            background-image: url("bg-img.jpg");
+            color: rgb(255, 255, 255);
+            text-align: center;
+            
+            }
+
+            .six h1{
+                margin-top: 150px;
+                font-size: 80px;
+            }
+            
+            .seven{
+                background-color:#000000 ;   
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+           .seven li img{
+                width: 200px;
+                height: 200px;
+                transition: ease 0.2s;
+            }
+
+            .seven li img:hover{
+                scale: 1.02;
+            }
+
+            .eight{
+            background-image: url("poem-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;    
+            text-shadow: 1px 1px 1px rgb(8, 1, 26);
+            }
+
+            .nine{
+            background-image: linear-gradient(#74bc69,#9fe894);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(1, 15, 7);   
+            }
+
+            .nine li{
+                font-style: italic;
+            }
+            .nine li:hover{
+                font-weight: bold;
+                color: rgb(143, 2, 82);
+            }
+           
+            .ten{
+            background-image: url(grocery.jpg);
+            }
+
+            .box{
+                margin:auto;
+                margin-top: 130px;
+                width: 100%;
+                max-width: 750px;
+                background-color: white;
+                opacity: 0.7;
+                border-radius: 10px;
+                padding: 50px;
+                transition: ease 0.5s;
+            }
+
+            .box:hover{
+                opacity: 0.9;
+                scale: 1.05;
+            }
+
+            .eleven{
+                background-color: rgb(149, 105, 231);
+                color: rgb(249, 255, 224);
+            }
+            .eleven h1{
+                background-color: rgb(21, 7, 97);
+            }
+            .eleven p{
+                background-color: rgb(230, 20, 125);
+            }
+
+            .twelve{
+                border: black 2px solid;
+            }
+
+            .twelve img{
+                width: 80px;
+                height: 80px;
+            }
+            @keyframes rotate {
+             0%{
+                rotate: 0deg;   
+            }
+            100%{
+                rotate: 360deg;
+            }
+
+            }
+            .twelve img:hover{
+                animation: rotate infinite 2s linear;
+            }
+
+           .img-left{
+                float: left;
+            }
+            .img-right{
+                float: right;
+            }
+            .right{
+                text-align: right;
+            }
+            .k{
+                color: rgb(1, 207, 234);
+            }
+            .r{
+                color: rgb(231, 34, 136);
+            }
+            .s{
+                color: rgb(103, 4, 101);
+            }
+             .k:hover{
+                color: rgb(231, 34, 136);
+            }
+            .r:hover{
+                color: rgb(1, 163, 98);
+            }
+            .s:hover{
+                color: rgb(255, 0, 0);
+            }
+
+            .thirteen, .thirteen a {
+            background: black;
+            color: rgb(0, 255, 0);
+            }
+
+            .thirteen a:visited{
+                color: rgb(255, 0, 123);
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .links ul{
+                text-align: left;
+                list-style-position: outside;
+                padding-left: 40px;
+            }
+
+            .fourteen{
+                border: 1px solid black;
+            }
+
+            .fourteen td{
+                border: none;
+            }
+
+            
+            .fourteen table{
+                margin:auto;
+                border: black 1px solid;
+                width: 300px;
+                max-width: 100%;
+                height: 240px;
+                text-align: center;
+                background-color: beige;
+            }
+
+            .fourteen td:first-child{
+                color:red;
+            }
+
+            .fourteen tr:first-child{
+                font-weight: bold;
+            }
+
+            .fourteen h1{
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+    
+            .fifteen, .seventeen{
+                border: black solid 1px;
+            }
+
+            .sixteen{
+                border: black solid 1px;
+                text-align: justify;
+            }
+            .sixteenh h1{
+                text-align:center;
+            }
+            .sixteen div{
+                margin:auto;
+                width: 100%;
+                max-width: 900px;
+            }
+            .sixteen .button{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+             .form-container {
+            padding: 10px ;
+            max-width: 780px;
+            margin: 0 auto;
+            }
+
+        .seventeen h1 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 10px;
+        }
+
+        .section-banner {
+        background-color: #cccccc;
+        padding: 2px 4px;
+        font-size: 15px;
+        margin-bottom: 18px;
+        width: 82%;
+        }
+
+        .content-indent {
+        margin-left: 140px;
+        }
+
+        .question-text {
+        font-size: 15px;
+        margin-bottom: 6px;
+        }
+
+    
+        .checkbox-grid {
+        display: grid;
+        grid-template-columns: 165px 165px;
+        row-gap: 4px;
+        margin-left: 4px;
+        margin-bottom: 24px;
+        font-size: 15px;
+        }
+
+        .checkbox-grid label {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        cursor: pointer;
+        }
+
+        .other-row {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        }
+
+        .other-row input[type="text"] {
+        width: 135px;
+        border: 1px solid #767676;
+        padding: 2px 4px;
+        }
+
+        table.rating-table {
+        width: auto;
+        height: auto;
+        margin: 0 0 12px;
+        font-size: 12px;
+    }
+
+    table.rating-table th,
+    table.rating-table td {
+        padding: 4px 6px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+    }
+
+        table.rating-table th {
+        background-color: #cccccc;
+        font-weight: bold;
+        }
+
+        table.rating-table td.row-label {
+        text-align: center;
+        padding: 8px 14px;
+        white-space: nowrap;
+        }
+
+    
+        .contact-fields {
+        margin-left: 50px;
+        margin-top: 6px;
+        margin-bottom: 22px;
+        font-size: 14px;
+        }
+
+        .contact-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        }
+
+        .contact-row label {
+        width: 75px;
+        text-align: right;
+        margin-right: 4px;
+        }
+
+        .contact-row input[type="text"],
+        .contact-row input[type="tel"],
+        .contact-row input[type="email"] {
+        width: 135px;
+        border: 1px solid #767676;
+        padding: 2px 4px;
+        }
+
+        .button-row {
+        text-align: center;
+        }
+
+        .button-row input {
+        padding: 2px 8px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        cursor: pointer;
+        }
+
+        .top-bar {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 24px;
+        margin: auto;
+       
+         }
+
+    .top-bar .section {
+        margin-left: 0;
+    }
+
+        @media (max-width: 600px) {
+            .page {
+                padding: 12px;
+            }
+
+            .content-indent,
+            .contact-fields {
+                margin-left: 0;
+            }
+
+            .checkbox-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            textarea {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .ten pre {
+                font-size: 12px;
+            }
+
+            .four table {
+                table-layout: fixed;
+            }
+
+            .four .big,
+            .four .small {
+                width: auto;
+            }
+
+            .top-bar h1 {
+                font-size: 1.25rem;
+            }
+
+            .box {
+                padding: 20px;
+            }
+        }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <h1 class="name">Name: <u>KIRSTEN CAMPOY</u></h1>
+            <h1 class="section">Section: <u>BSIT-1A</u></h1>
+        </div>
+
+    <div class="page">    
+        <h1 class="question"> 1. HTML Font </h1>
+
+        <div class ="num one">
+        <div class="content">
+            <h1> MEET MOMONNGA</h1>
+        <div class="img"></div>
+        <h4>click me!</h4>
+        <p>This is <b>momongga</b>, an evil little spirit who possesed this<br>
+            poor innocent Japanese flying squirrel. It will try to <i>"cutify"</i><br>
+            itself to make you give it snacks or <u>bait you</u> to compliment it.
+        </p>
+    </div>
+        </div>
+
+        <a href="1.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+
+        <h1 class="question"> 2. Description List </h1>
+
+        <div class ="num two">
+        <div class="content">
+              <h1>MY TOP ANIMES</h1>
+        <dl>
+            <dt>Delicious in Dungeon</dt>
+            <dd>
+                A wonderful stylistic anime set in a magical, dungeon fantasy.
+                It centers around dungeon monster cuisine and adventure. The cast 
+                aims to find the secrets of the dungeon and its hidden culinary gems.
+            </dd>
+
+             <dt>Witch Hat Atelier</dt>
+            <dd>
+                A fantasy land where magical practices are hidden from
+                the world, as a way to stop the malpractice of dark and harmful magic of the
+                "Brimmed Caps." However our main character, Coco, accidentally discovered this banned magic
+                and harmed her mother in the process. She was placed under Qifrey's Atelier to
+                officialy train her and help her undo what she has done.
+            </dd>
+
+            <dt>Frieren: Beyond Journey's End</dt>
+            <dd>
+                As a long lived-species, Frieren the elf mage will discover
+                how to truly value life and others around her by going through
+                an emotional journey. Tracing back her fond memories of her old
+                party who slew the Demon King, and finally see that every second is 
+                meaningful and fleeting.
+            </dd>
+        </dl>
+
+    </div>
+        </div>
+
+        <a href="2.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">  3. Changing Background Color of a page, text style, text color, and text size </h1>
+
+        <div class ="num three">
+        <div class="content">
+            <h1>Look! Styles and Colors</h1>
+            <p> Background is PENK</p>
+            <h3>This text is in Verdana and green</h3>
+            <h6>This test in Times and yellow</h6>
+            <p class="alice">This text is 67 pixels high</p>
+        </div>
+        </div>
+
+        <a href="3.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">4. Tables </h1>
+        <div class ="num four">
+        <div class="content">
+           <table>
+            <tr>
+                <td rowspan="3" class="big">color game</td>
+                <td class="small a">Magic</td>
+                <td class="small b">Generosity</td>
+            </tr>
+            <tr>
+                <td class="small c">Kindness</td>
+                <td class="small d">Loyalty</td>
+            </tr>
+            <tr>
+                <td class="small e">Honesty</td>
+                <td class="small f">Laughter</td>
+            </tr>
+        </table>
+        </div>
+        </div>
+
+        <a href="4.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">5.  Inserting Graphics to Web </h1>
+        <div class ="num five">
+        <div class="content">
+           
+        <h1><img src="did.png">  DELICIOUS IN DUNGEON</h1>
+        <h1><img src="wha.png"> WITCH HAT ATELIER </h1>
+        <h1><img src="frieren.jpe"> BEYOND JOURNEY'S END: FRIEREN</h1>
+        </div>
+        </div>
+
+        <a href="5.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">6.  Specifying background image of a page </h1>
+        <div class ="num six">
+        <div class="content">
+           
+          <h1>Steven Universe</h1>
+
+          </div>
+        </div>
+
+        <a href="6.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">7. Hyperlink Images</h1>
+        <div class ="num seven">
+        <div class="content">
+           
+          <h1>MY TOP 10 SONGS (DEC 2026)</h1>
+        <ol>
+            <li> <a href="https://youtu.be/KCBHuavJ3EQ?si=yA_TIB5ugoDnL7v_"><img src="buryme.png"></a></li>
+            <li> <a href="https://youtu.be/pYS9WjAjfro?si=3jE7rRrdEdi1ieOP"><img src="hilltodieon.jpe"></a></li>
+            <li> <a href="https://youtu.be/MkaMCFp4x38?si=8g7hYFIbSb8QYSQt_"><img src="ever after.jpe"></a></li>
+            <li> <a href="https://youtu.be/hqy86jWpB-Y?si=u_bVcutzLS-E1o-a"><img src="codedways.png"></a></li>
+            <li> <a href="https://youtu.be/4-pUFmgR0SU?si=bf677bS6Umn7xkAq"><img src="fool.jpe"></a></li>
+            <li> <a href="https://youtu.be/Mmw-PpWhKFg?si=W6V4Jj7vVC5ri721"><img src="kda.jpe"></a></li>
+            <li> <a href="https://youtu.be/xnLPqleIYP0?si=tuESBdLdbCu5ZPUo"><img src="poppy.jpg"></a></li>
+            <li> <a href="https://youtu.be/QIplAsZsDTY?si=MAGzvPCLCX9lnKEG"><img src="back.jpe"></a></li>
+            <li> <a href="https://youtu.be/gsZauX8gwxo?si=3xuwdl1Ri7jusy_W"><img src="expectations.jpe"></a></li>
+            <li> <a href="https://youtu.be/lX6g_cm2rM4?si=4Cq6Bu2Hbb-RaUPV"><img src="wicked.jpeg"></a></li>
+        </ol>
+
+          </div>
+        </div>
+
+        <a href="7.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">8. HTML Font</h1>
+        <div class ="num eight">
+        <div class="content">
+
+          <h1>Ode to Hallownest</h1>
+        <h6>HOLLOW KNIGHT</h6>
+        <p>In wilds beyond they speak your name with reverence and regret, <br>
+            For none could tame our savage souls yet you the challenge met,<br>
+            Under palest watch, you taught, you changed, base instincts were redeemed, <br>
+            A world you gave to bug and beast as they had never dreamed.<br>
+            Our cherished dreams you granted and delivered more,<br>
+            But in dismay you found too late our desires had no end,<br>
+            What cost to tame our savagery? You gave your all and then gave more.<br>
+            Yet still desires lay unquenched, more dreams remained, your energies spent.<br>
+            Amongst it sprang a dreadful scourge,<br>
+            That forced return our aggressive urge,<br>
+            And turned us back to beasts or husks,<br>
+            Our souls consumed by light above.<br>
+            Within your corpse can still be heard the plaintiff cries of one,<br>
+            Who took our pain, and loss, and dreams inside itself to...<br>
+            Through its pain we found a truth that must now be confessed,<br>
+            For nothing can contain such things but perfect emptiness.</p>
+
+          </div>
+        </div>
+
+        <a href="8.pdf"><img src="download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">9. Ordered List and Unordered List</h1>
+        <div class ="num nine">
+        <div class="content">
+            <h1>DELTARUNE CHARACTERS</h1>
+        <ul>
+            <b><li>LIGHTENERS</li></b>
+            <ul>
+                <li>Kris</li>
+                <li>Susie</li>
+                <li> Noelle</li>
+            </ul>
+
+            <b><li>DARKENERS</li></b>
+            <ul>
+                <li>Ralsei</li>
+                <li>Lancer</li>
+                <li>Tenna</li>
+            </ul>
+        </ul>
+
+        <h1>HOW TO FRY AN EGG</h1>
+        <ol type="A">
+            <li>Pre-heat pan.</li>
+            <li>Crack egg into pan.</li>
+            <li>Fry it for 2-3 minutes</li>
+        </ol>
+
+        <h1>HOW TO BOIL AN EGG</h1>
+        <ol type="I">
+            <li>Clean egg</li>
+            <li>Put egg in pot and boil.</li>
+            <li>Remvoe from pot after 3-4 minutes.</li>
+        </ol>
+          </div>
+        </div>
+
+        <a href="9.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">10. Preformatting Text </h1>
+        <div class ="num ten">
+        <div class="content">
+           
+           <div class="box">
+        <h1>We will preformat text to list items in columns</h1>
+
+        <pre>
+        egg       lumpia       orange
+        cake      cheesecake   chicken
+        milk      bread        chocolate
+        </pre>
+        </div>
+
+          </div>
+        </div>
+
+        <a href="10.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">11. Changing background color of page and paragraphs</h1>
+        <div class ="num eleven">
+        <div class="content">
+           
+        <h1>TWILIGHT SPARKLE</h1>
+
+        <h3>Princess of Friendship</h3>
+
+        <p>ELEMENT OF MAGIC</p>
+
+          </div>
+        </div>
+
+        <a href="11.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+            <h1 class="question">12. Wrapping text around a graphic</h1>
+            <div class ="num twelve">
+            <div class="content">
+                <img src="kris.png" class="img-left">
+            <h1 class="k">KRIS DREEMUR</h1>
+
+            <img src="ralsei.png"class="img-right ">
+            <h1 class="right r">RALSEI, THE DARK PRINCE</h1>
+            
+            
+            <img src="susie.png" class="img-left">
+            <h1 class="s">SUSIE, THE CHALK-EATER</h1>
+            
+          </div>
+        </div>
+
+        <a href="12.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">13. Hyperlinks</h1>
+        <div class ="num thirteen">
+        <div class="content">
+            <div class="links">
+        <h1>ONLINE THINGS I LIKE</h1>
+        <ul>
+            <li><a href="https://www.tiktok.com/@temmie_temtem?is_from_webapp=1&sender_device=pc">My Tiktok</a></li>
+            <li><a href="https://www.facebook.com/XxTemmieTemTemxX">My FB</a></li>
+            <li><a href="https://deltarune.com/">Deltarune</a></li>
+            <li><a href="https://playdresstoimpress.com/">Dress to Impress</a></li>
+            <li><a href="https://www.youtube.com/@jaidenanimations">Jaiden Animations</a></li>
+            <li><a href="https://www.youtube.com/channel/UCkfc-Bc9t4FZH3sw4GuFZ0w">Rebecca Sugar</a></li>
+            <li><a href="https://www.tiktok.com/@s1lliee">My Friend</a></li>
+            <li><a href="https://www.youtube.com/@Nirami">Nirami</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLLicncuOfKyg&si=iUpE_ZKK0fIh1VCF">Chiikawa</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLHovnlOusNLhr7ttEReJUuC3QPHoohqZn&si=18HIDCO4zNepCasG">Knights of Guinevere</a></li>
+            <li><a href="https://www.youtube.com/@markiplier">Markiplier</a></li>
+        </ul>
+        </div>
+          </div>
+        </div>
+
+        <a href="13.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">14. Tables</h1>
+        <div class ="num fourteen">
+        <div class="content">
+           <h1>JUNE 2012</h1>
+        <table>
+            <tr>
+                <td>Su</td>
+                <td>Mo</td>
+                <td>Tu</td>
+                <td>We</td>
+                <td>Th</td>
+                <td>Fr</td>
+                <td>Sa</td>
+            </tr>
+            <tr>
+                <td colspan="5"> </td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                
+            </tr>
+
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                
+                
+            </tr>
+
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+        </table>
+          </div>
+        </div>
+
+        <a href="14.pdf"><img src="download-btn.png" class="download-btn"></a>
+
+        <h1 class="question">15.HTML FORMS</h1>
+        <div class ="num fifteen">
+        <div class="content">
+            <h1>Customer Information</h1>
+        <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="USERNAME"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="PASSWORD"><br><br>
+
+         <input type="radio" id="gender" name="Gender" value="Male">
+        <label for="gender">Male</label><br>
+        <input type="radio" id="gender" name="Gender" value="Gender">
+        <label for="gender">Female</label><br><br>
+
+        <label for="Birthday">Birthday:</label>
+        <select id="month" name="month">
+            <option value="">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+
+        
+        <select id="birthday" name="birthday">
+            <option>Day</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+
+         <select id="year" name="year">
+            <option value="">Year</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+            <option value="1979">1979</option>
+            <option value="1978">1978</option>
+            <option value="1977">1977</option>
+            <option value="1976">1976</option>
+            <option value="1975">1975</option>
+            <option value="1974">1974</option>
+            <option value="1973">1973</option>
+            <option value="1972">1972</option>
+            <option value="1971">1971</option>
+            <option value="1970">1970</option>
+            <option value="1969">1969</option>
+            <option value="1968">1968</option>
+            <option value="1967">1967</option>
+            <option value="1966">1966</option>
+            <option value="1965">1965</option>
+            <option value="1964">1964</option>
+            <option value="1963">1963</option>
+            <option value="1962">1962</option>
+            <option value="1961">1961</option>
+            <option value="1960">1960</option>
+            <option value="1959">1959</option>
+            <option value="1958">1958</option>
+            <option value="1957">1957</option>
+            <option value="1956">1956</option>
+            <option value="1955">1955</option>
+            <option value="1954">1954</option>
+            <option value="1953">1953</option>
+            <option value="1952">1952</option>
+            <option value="1951">1951</option>
+            <option value="1950">1950</option>
+            <option value="1949">1949</option>
+            <option value="1948">1948</option>
+            <option value="1947">1947</option>
+            <option value="1946">1946</option>
+            <option value="1945">1945</option>
+            <option value="1944">1944</option>
+            <option value="1943">1943</option>
+            <option value="1942">1942</option>
+            <option value="1941">1941</option>
+            <option value="1940">1940</option>
+            <option value="1939">1939</option>
+            <option value="1938">1938</option>
+            <option value="1937">1937</option>
+            <option value="1936">1936</option>
+            <option value="1935">1935</option>
+            <option value="1934">1934</option>
+            <option value="1933">1933</option>
+            <option value="1932">1932</option>
+            <option value="1931">1931</option>
+            <option value="1930">1930</option>
+            <option value="1929">1929</option>
+            <option value="1928">1928</option>
+            <option value="1927">1927</option>
+            <option value="1926">1926</option>
+            <option value="1925">1925</option>
+            <option value="1924">1924</option>
+            <option value="1923">1923</option>
+            <option value="1922">1922</option>
+            <option value="1921">1921</option>
+            <option value="1920">1920</option>
+            <option value="1919">1919</option>
+            <option value="1918">1918</option>
+            <option value="1917">1917</option>
+            <option value="1916">1916</option>
+            <option value="1915">1915</option>
+            <option value="1914">1914</option>
+            <option value="1913">1913</option>
+            <option value="1912">1912</option>
+            <option value="1911">1911</option>
+            <option value="1910">1910</option>
+            <option value="1909">1909</option>
+            <option value="1908">1908</option>
+            <option value="1907">1907</option>
+            <option value="1906">1906</option>
+            <option value="1905">1905</option>
+            <option value="1904">1904</option>
+            <option value="1903">1903</option>
+            <option value="1902">1902</option>
+            <option value="1901">1901</option>
+            <option value="1900">1900</option>
+        </select> <br><br>
+
+        <input type="checkbox" id="program1" name="program" value="CS">
+        <label for="program1">Computer Science</label><br>
+        <input type="checkbox" id="program2" name="program" value="CE">
+        <label for="program2">Computer Engineering</label><br>
+        <input type="checkbox" id="program3" name="program" value="IT">
+        <label for="program3">Information Technology</label><br><br>
+       
+
+        <label for="philippine-city">City:</label>
+                <select id="philippine-city" name="philippine-city">
+                    <option value="">Select a city</option>
+                    <option>Angeles</option>
+                    <option>Antipolo</option>
+                    <option>Bacolod</option>
+                    <option>Bago</option>
+                    <option>Batangas City</option>
+                    <option>Bayawan</option>
+                    <option>Baybay</option>
+                    <option>Bayugan</option>
+                    <option>Bogo</option>
+                    <option>Butuan</option>
+                    <option>Cabadbaran</option>
+                    <option>Cabanatuan</option>
+                    <option>Cadiz</option>
+                    <option>Cagayan de Oro</option>
+                    <option>Calamba</option>
+                    <option>Calapan</option>
+                    <option>Caloocan</option>
+                    <option>Candon</option>
+                    <option>Canlaon</option>
+                    <option>Carcar</option>
+                    <option>Cauayan</option>
+                    <option>Cavite City</option>
+                    <option>Cebu City</option>
+                    <option>City of Isabela</option>
+                    <option>Cotabato City</option>
+                    <option>Dagupan</option>
+                    <option>Danao</option>
+                    <option>Dapitan</option>
+                    <option>Davao City</option>
+                    <option>Digos</option>
+                    <option>Dipolog</option>
+                    <option>Dumaguete</option>
+                    <option>El Salvador</option>
+                    <option>Escalante</option>
+                    <option>Gapan</option>
+                    <option>General Santos</option>
+                    <option>General Trias</option>
+                    <option>Gingoog</option>
+                    <option>Guihulngan</option>
+                    <option>Himamaylan</option>
+                    <option>Ilagan</option>
+                    <option>Iligan</option>
+                    <option>Iloilo City</option>
+                    <option>Imus</option>
+                    <option>Iriga</option>
+                    <option>Island Garden City of Samal</option>
+                    <option>Jaro</option>
+                    <option>Kidapawan</option>
+                    <option>Koronadal</option>
+                    <option>La Carlota</option>
+                    <option>Lamitan</option>
+                    <option>Laoag</option>
+                    <option>Lapu-Lapu</option>
+                    <option>Las Piñas</option>
+                    <option>Legazpi</option>
+                    <option>Ligao</option>
+                    <option>Lipa</option>
+                    <option>Lucena</option>
+                    <option>Maasin</option>
+                    <option>Mabalacat</option>
+                    <option>Makati</option>
+                    <option>Malabon</option>
+                    <option>Malaybalay</option>
+                    <option>Malolos</option>
+                    <option>Mandaluyong</option>
+                    <option>Marawi</option>
+                    <option>Marikina</option>
+                    <option>Masbate City</option>
+                    <option>Mati</option>
+                    <option>Muntinlupa</option>
+                    <option>Naga</option>
+                    <option>Navotas</option>
+                    <option>Olongapo</option>
+                    <option>Ormoc</option>
+                    <option>Oroquieta</option>
+                    <option>Ozamiz</option>
+                    <option>Pagadian</option>
+                    <option>Palayan</option>
+                    <option>Panabo</option>
+                    <option>Parañaque</option>
+                    <option>Pasay</option>
+                    <option>Pasig</option>
+                    <option>Passi</option>
+                    <option>Puerto Princesa</option>
+                    <option>Quezon City</option>
+                    <option>Roxas</option>
+                    <option>San Carlos</option>
+                    <option>San Fernando</option>
+                    <option>San Jose</option>
+                    <option>San Jose del Monte</option>
+                    <option>San Juan</option>
+                    <option>San Pablo</option>
+                    <option>Santa Rosa</option>
+                    <option>Santiago</option>
+                    <option>Silay</option>
+                    <option>Sipalay</option>
+                    <option>Sorsogon City</option>
+                    <option>Surigao City</option>
+                    <option>Tabaco</option>
+                    <option>Tabuk</option>
+                    <option>Tacloban</option>
+                    <option>Taguig</option>
+                    <option>Talisay</option>
+                    <option>Tandag</option>
+                    <option>Tangub</option>
+                    <option>Tarlac City</option>
+                    <option>Tayabas</option>
+                    <option>Toledo</option>
+                    <option>Trece Martires</option>
+                    <option>Tuguegarao</option>
+                    <option>Urdaneta</option>
+                    <option>Valencia</option>
+                    <option>Valenzuela</option>
+                    <option>Victorias</option>
+                    <option>Vigan</option>
+                    <option>Zamboanga City</option>
+            </select> <br><br>
+        <label for="AddInfo">Tell us about yourself</label> <br>
+        <textarea name="message" rows="10" cols="30"></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+          </div>
+        </div>
+
+        <a href="15.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+    
+        <div class ="num sixteen">
+        <div class="content">
+            <div>
+    <h1>Customer Satisfaction Survey Form</h1>
+
+    <form>
+        <h3>1) Why did you contact customer service?</h3>
+        <textarea name="reason"  rows="10" cols="100"></textarea>
+  
+
+      <h3>2) What method did you use to contact customer service?</h3>
+          <label><input type="radio" name="contact_method" value="Telephone"> Telephone</label>
+          <label><input type="radio" name="contact_method" value="Mail"> Mail</label>
+          <label><input type="radio" name="contact_method" value="Email"> Email</label>
+          <label><input type="radio" name="contact_method" value="Other"> Other:</label>
+          <input type="text" name="contact_method_other" class="other-input" aria-label="Other contact method">
+      
+      <h3>3) How satisfied are you with the time it took customer service to answer your questions or resolve your issue?</h3>
+          <label><input type="radio" name="resolution_time" value="Very Dissatisfied"> Very Dissatisfied</label>
+          <label><input type="radio" name="resolution_time" value="Dissatisfied"> Dissatisfied</label>
+          <label><input type="radio" name="resolution_time" value="Undecided"> Undecided</label>
+          <label><input type="radio" name="resolution_time" value="Satisfied"> Satisfied</label>
+          <label><input type="radio" name="resolution_time" value="Very Satisfied"> Very Satisfied</label>
+        
+
+      <h3>4) The customer service representative was knowledgeable and easy to understand.</h3>
+          <label><input type="radio" name="rep_knowledge" value="Strongly Disagree"> Strongly Disagree</label>
+          <label><input type="radio" name="rep_knowledge" value="Disagree"> Disagree</label>
+          <label><input type="radio" name="rep_knowledge" value="Undecided"> Undecided</label>
+          <label><input type="radio" name="rep_knowledge" value="Satisfied"> Satisfied</label>
+          <label><input type="radio" name="rep_knowledge" value="Strongly Agree"> Strongly Agree</label>
+
+      <h3>5) The customer service representative was able to handle my problem quickly and to my satisfaction.</h3>
+          <label><input type="radio" name="problem_handling" value="Strongly Disagree"> Strongly Disagree</label>
+          <label><input type="radio" name="problem_handling" value="Disagree"> Disagree</label>
+          <label><input type="radio" name="problem_handling" value="Undecided"> Undecided</label>
+          <label><input type="radio" name="problem_handling" value="Satisfied"> Satisfied</label>
+          <label><input type="radio" name="problem_handling" value="Strongly Agree"> Strongly Agree</label>
+
+          <br> <br>
+          <div class="button">
+        <input type="submit" value="Submit" >
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </div>
+          </div>
+        </div>
+
+        <a href="16.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+        <div class ="num seventeen">
+        <div class="content">
+           <div class="form-container">
+    <h1>Survey Form</h1>
+
+    <form action="#" method="post">
+
+      <div class="content-indent">
+        <div class="section-banner">Section 1</div>
+
+
+        <div class="question-text">1.1. Which of the following services do you use?</div>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" name="services" value="Service 1"> Service 1</label>
+          <label><input type="checkbox" name="services" value="Service 2"> Service 2</label>
+          <label><input type="checkbox" name="services" value="Service 3"> Service 3</label>
+          <label><input type="checkbox" name="services" value="Service 4"> Service 4</label>
+          <div class="other-row">
+            <label><input type="checkbox" name="services" value="Other"> Other:</label>
+            <input type="text" name="other_service" aria-label="Other service">
+          </div>
+        </div>
+
+        <div class="question-text">1.2. How would you rate our services with our service in terms of...</div>
+        <table class="rating-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Excellent</th>
+              <th>Very Good</th>
+              <th>Good</th>
+              <th>Fair</th>
+              <th>Poor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">Your overall experience:</td>
+              <td><input type="radio" name="overall_experience" value="Excellent" aria-label="Overall experience: Excellent"></td>
+              <td><input type="radio" name="overall_experience" value="Very Good" aria-label="Overall experience: Very Good"></td>
+              <td><input type="radio" name="overall_experience" value="Good" aria-label="Overall experience: Good"></td>
+              <td><input type="radio" name="overall_experience" value="Fair" aria-label="Overall experience: Fair"></td>
+              <td><input type="radio" name="overall_experience" value="Poor" aria-label="Overall experience: Poor"></td>
+            </tr>
+            <tr>
+              <td class="row-label">The value of our service:</td>
+              <td><input type="radio" name="service_value" value="Excellent" aria-label="Value of service: Excellent"></td>
+              <td><input type="radio" name="service_value" value="Very Good" aria-label="Value of service: Very Good"></td>
+              <td><input type="radio" name="service_value" value="Good" aria-label="Value of service: Good"></td>
+              <td><input type="radio" name="service_value" value="Fair" aria-label="Value of service: Fair"></td>
+              <td><input type="radio" name="service_value" value="Poor" aria-label="Value of service: Poor"></td>
+            </tr>
+            <tr>
+              <td class="row-label">Promptness of our service</td>
+              <td><input type="radio" name="promptness" value="Excellent" aria-label="Promptness: Excellent"></td>
+              <td><input type="radio" name="promptness" value="Very Good" aria-label="Promptness: Very Good"></td>
+              <td><input type="radio" name="promptness" value="Good" aria-label="Promptness: Good"></td>
+              <td><input type="radio" name="promptness" value="Fair" aria-label="Promptness: Fair"></td>
+              <td><input type="radio" name="promptness" value="Poor" aria-label="Promptness: Poor"></td>
+            </tr>
+            <tr>
+              <td class="row-label">The courtesy of our staff:</td>
+              <td><input type="radio" name="staff_courtesy" value="Excellent" aria-label="Courtesy of staff: Excellent"></td>
+              <td><input type="radio" name="staff_courtesy" value="Very Good" aria-label="Courtesy of staff: Very Good"></td>
+              <td><input type="radio" name="staff_courtesy" value="Good" aria-label="Courtesy of staff: Good"></td>
+              <td><input type="radio" name="staff_courtesy" value="Fair" aria-label="Courtesy of staff: Fair"></td>
+              <td><input type="radio" name="staff_courtesy" value="Poor" aria-label="Courtesy of staff: Poor"></td>
+            </tr>
+          </tbody>
+        </table>
+
+  
+  
+          <label for="comments">Any comments or suggestions</label><br>
+          <textarea id="comments" name="comments" rows="5" cols="60" ></textarea>
+
+
+      
+        <div class="section-banner">Section 2</div>
+
+      
+        <div class="question-text">2.1. How may we reach you? <em>(optional)</em></div>
+        <div class="contact-fields">
+          <div class="contact-row">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="contact-row">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="contact-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="button-row">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+          </div>
+        </div>
+
+        <a href="17.pdf"><img src = "download-btn.png" class="download-btn"></a>
+
+  
+    </body>
+</html>
